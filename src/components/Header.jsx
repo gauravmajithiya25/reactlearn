@@ -16,7 +16,7 @@ function Header() {
                         <NavLink to="/hooks">Hooks</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/react-route">React Route</NavLink>
+                        <NavLink to="/api">Api Example</NavLink>
                     </li>
                     <li>
                         <NavLink to="/redux">Redux</NavLink>
