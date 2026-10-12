@@ -5,7 +5,7 @@ function Comp() {
     return (
         <>
             <h1>Welcome to React</h1>
-            <h2>Count from Redux Store: {count}</h2>
+            <h2 class="form-label" style={{ color: 'red' }}>Count from Redux Store: {count}</h2>
             <br />
             <h2>A component in react is a reusable Building Block of the UI.</h2><br>
             </br>
