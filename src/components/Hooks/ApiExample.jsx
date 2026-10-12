@@ -8,14 +8,13 @@ function ApiExample() {
     useEffect(() => {
         const getData = async () => {
             try {
-                console.log("gaurav2222");
+                await new Promise(resolve => setTimeout(resolve, 2000))
                 const res = await fetch('https://api.restful-api.dev/objects')
-                console.log("gaurav");
-                console.log(res);
                 if (!res.ok) throw new Error(`HTTP error: ${res.status}`)
                 const data = await res.json()
                 setItems(data)
             } catch (err) {
+                console.log(err.message)
                 setError(err.message)
             } finally {
                 setLoading(false)
@@ -24,8 +23,8 @@ function ApiExample() {
 
         getData()
     }, [])
-
-
+    if (loading) return <p>Loading...</p>
+    if (error) return <p>Error: {error}</p>
 
     return (
         <>
