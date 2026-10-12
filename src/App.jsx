@@ -7,6 +7,7 @@ import Hooksexample from "./components/Hooks/Hooksexample";
 import "./App.css";
 import PropsParent from "./components/Props/PropsParent";
 import ApiExample from "./components/Hooks/ApiExample";
+import ReduxExample from "./components/redux/ReduxExample";
 
 function App() {
   const [count, setCount] = useState(15);
@@ -31,6 +32,7 @@ function App() {
           <Route path="/props" element={<PropsParent />} />
           <Route path="/hooks" element={<Hooksexample />} />
           <Route path="/api" element={<ApiExample />} />
+          <Route path="/redux" element={<ReduxExample />} />
         </Routes>
       </main>
     </>
