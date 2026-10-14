@@ -21,6 +21,9 @@ function Header() {
                     <li>
                         <NavLink to="/redux">Redux</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="/tan-stack">Tan Stack</NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
